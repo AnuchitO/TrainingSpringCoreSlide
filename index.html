@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Spring Core By Anuchit Prasertsang</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <style>
+                    .reveal h1 {
+                        text-shadow: none;
+                    }
+                    .reveal section img {
+                        border-color: transparent;
+                        box-shadow: none;
+                    }
+
+		    .nongProfile {
+				text-shadow: 	0 0 10px #fff, 0 0 20px #fff,
+					 	0 0 30px #fff, 0 0 40px #ff00de, 
+						0 0 70px #ff00de, 0 0 80px #ff00de, 
+						0 0 100px #ff00de, 0 0 150px #ff00de;
+				//font-weight:bold;
+			}
+                </style>
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+		<!--script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'css/print/pdf.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script-->
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+            <div id="foot-tmpl" style="display:none;">
+                <h2 class="absolute-element" style="font-style: normal; font-variant: normal; position: absolute; width: 325px; height: 72px; z-index: 6; left: 380px; top: 609px;">
+                    <font color="#ffffff" style="background-color: rgb(152, 0, 0); font-size: 24px;">CORE</font>
+                </h2>
+                <h3 class="absolute-element" style="position: absolute; z-index: 4; left: 392px; top: 613px;">
+                    <!--font style="font-size: 42px;">Spring <font color="#3c78d8">Framework</font-->
+                </font>
+                </h3>
+		<center>	
+                <div style="width: 269px; height: 78px; max-height: none; max-width: none; position: absolute; z-index: 4; left: 325px; top: 592px;" class="absolute-element">
+                    <img style="height:100px;" src="images/Spring_Logo.png"/>
+                    <!--img style="height:50px;" src="images/eidos.png"/-->
+                </div>
+		<center>
+            </div>
+
+            <div class="reveal">
+                <div class="slides">
+                    <section>
+                        <h2><font style="font-size: 72px;">--</font></h2>
+                        <h1>
+                            <font color="#4a86e8" style="font-size: 112px;">SPRING FRAMEWORK</font>
+                        </h1>
+                        <p>
+                            <font color="#434343" style="font-size: 54px;"><b>@Nong</b></font>
+                        </p>
+                        <p>
+                            <font color="#666666" style="font-size: 32px;">Anuchit Prasertsang</font>
+                        </p>
+                        <p>
+                            <font color="#434343" style="font-size: 32px;">from </font>SoftPlus Family
+                        </p>
+                        <h2 class="absolute-element" style="position: absolute; width: 325px; height: 72px; z-index: 6; left: 677px; top: 193px;">
+                            <font style="font-size: 54px; background-color: rgb(152, 0, 0);" color="#ffffff">CORE</font>
+                        </h2>
+                        <div style="margin-top:20px;">
+			    <img style="height:100px;" src="images/sofplusTech.png"/>
+                            <img style="height:100px;" src="images/Spring_Logo.png"/>
+                            <img style="height:100px;" src="images/SSG_logo.png"/>
+
+                        </div>
+                    </section>
+                    <!--section data-background="images/SuperSaiyanGod.png"-->
+		   <section data-background="images/superSaiyaGoD.jpg">
+                        <div style="margin-top:-50px;">
+
+			<table>
+				<tr>
+				    <td><img src="images/peadNong.jpg"/></td>
+				    <td style="position: absolute; width: 550px; height: 72px; z-index: 6; left: 620px; top: 100px;"><ul>
+					<font class="nongProfile"><b>อนุชิต ประเสริฐสังข์&nbsp;&nbsp;(หน่อง)</b></font><br/><br/>
+					<font class="nongProfile"><b>GOAL</b></font><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="nongProfile">ทำงานต้องสนุกสนานเพลิดเพลิน</font><br/>
+					<br/><font class="nongProfile"><b>LITTLE KNOW FACT</b></font><br/>
+					<font class="nongProfile">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชอบนั่งสมาธิ<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชอบสีขาว,ฟ้า<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อยากเป็น Super Saiyan GoD
+					<font>
+				    </td>
+				</tr>
+			</table>
+                        </div>
+                    </section>
+
+                    <section>
+			<section>
+				<p>
+		                    <font color="#606060" style="font-size: 54px; position: absolute; left: 531px; top: 220px;"><b>Introduction</b></font>
+		                </p>
+		                <br/><br/><br/>
+		                    <font color="#000000" style="font-size: 100px; position: relative; left:0px; top:100px;"><b>Spring Framework</b></font>   
+			</section> 
+			<section id="fragments">
+				<h2>Agenda</h2>				
+					<ul>
+						<li class="fragment">What is Spring framework ?</li>
+						<li class="fragment">Why Spring framework ?</li>
+						<li class="fragment">Spring framework architecture</li>
+						<li class="fragment">Spring Concept</li>
+							<ul class="fragment">
+								<li class="fragment">Inversion of Control (IoC)</li>								<li class="fragment">Dependency Injection (DI)</li>
+							</ul>						
+						
+					</ul>
+				<aside class="notes">
+					Test Note
+				</aside>
+			</section>
+			<section>
+				<h2>Agenda (Continued)</h2>				
+					<ul>
+						<li class="fragment">Spring Bean Definition</li>
+						<li class="fragment">Spring Injecting Collection</li>
+						<li class="fragment">Spring Bean Definition Inheritance</li>
+						<li class="fragment">Spring Bean Scopes</li>					
+						<li class="fragment">Spring Bean Life Cycle</li>
+						<li class="fragment">Spring Beans Auto-Wiring</li>
+						<li class="fragment">Spring Annotation Based Configuration</li>
+					</ul>
+				<aside class="notes">
+					Test Note
+				</aside>
+			</section>
+                    </section>
+                    <section>
+                        <h2>What is Spring framework ?</h2> 
+				<ul>
+					<li >Spring Framework is open source application framework for Java platform</li> 
+				 	<li >Light-weight yet comprehensive framework for building Java SE and Java EE applications</li>  
+                		</ul>
+                    </section>
+                    <section>
+			<section>
+                        <h1>
+ <span style="background-color: rgb(60, 120, 216);">
+                        <font color="#ffffff">why</font>
+                        </span>
+                        <h2 color="#3c78d8">Spring framework ?</h2>
+                   		<ul>
+				 	<li color="#666666" >Spring Framework does not enforce any specific programming model it has become widely popular in the Java community primarily as an alternative and replacement for the Enterprise JavaBean model</li>  
+                		</ul>
+			</section>
+<section>
+                        <h1>
+ <span style="background-color: rgb(60, 120, 216);">
+                        <font color="#ffffff">why</font>
+                        </span>
+                        <h2 color="#3c78d8">Spring framework ?</h2>
+                   		<ul>
+				 	<li color="#666666" >Wiring components (JavaBeans) through Dependency Injection</li>  
+					<li color="#666666" >Design to interfaces</li>
+					<ul><li>Insulates a user of a functionality from implementation details</li></ul>
+                		</ul>
+			</section>
+<section>
+                        <h1>
+ <span style="background-color: rgb(60, 120, 216);">
+                        <font color="#ffffff">why</font>
+                        </span>
+                        <h2 color="#3c78d8">Spring framework ?</h2>
+                   		<ul>
+				 	<li color="#666666" >Simplify use of popular technologies</li>  
+					<li color="#666666" >Integration with other technologies</li>
+					<ul>
+						<li>EJB for J2EE</li>
+						<li>Hibernate, iBates, JDBC (for data access)</li>
+						<li>Velocity (for presentation)</li>
+						<li>Struts and WebWork (For web)</li>
+						<li>Java Persistence API (JPA)</li>
+					</ul>
+                		</ul>
+			</section>
+                    </section>
+                    <section>
+                        <section>
+                            <h2>Spring framework architecture</h2>
+                            <div style="margin-top:20px;">
+                            	<img style="height:auto;" src="images/Spring-framework-architecture.png"/>                            
+                            </div>
+                        </section>                        
+                    </section>
+                    <section>
+                       <section>
+
+                            <h2>Inversion of Control (IoC)</h2>
+                            <ul>
+                            	<li>IoC is a principle that externalizes the creation and management of component dependencies.</li>
+                            </ul>         
+  			    <center>              
+			 	<img style="height:500px;" src="images/IoC.png"/>
+			    </center>
+                        </section>
+                        <section>
+                            <h2>
+                                Dependency Injection (DI)
+                            </h2>
+                            <ul>					
+					<li>Aims to offer a simpler mechanism for provisioning component dependencies and managing these dependencies throughout their lifecycles.</li>
+					<li>"Hollywood Principle"</li>
+						<ul>
+							<li>Don't call me, I'll call you</li>
+						</ul>
+					<li>"Container" resolves (injects) dependencies of components by setting implementation object (push)</li>
+						
+					
+                		</ul>
+                        </section>
+			<section>
+				<h2>Two Dependency Injection Variants</h2>
+				<ul>
+				 	<li >Constructor dependency Injection</li> 
+					<ul> 
+						<li >Dependencies are provided through the constructors of the component</li>
+					</ul>
+					<li>Setter dependency injection</li>
+					<ul>
+						<li>Dependencies are provided through the JavaBean-style setter methods of the component </li>
+						<li>More popular than Constructor dependency injection</li>
+					</ul>
+                		</ul>
+			</section>
+			<section>
+				<h2>Constructor Dependency Injection</h2>
+				<pre><code class="data-trim contenteditable">public class ConstructorInjection {
+
+    private Dependency dep;
+    
+    public ConstructorInjection(Dependency dep) {
+        this.dep = dep;
+    }
+}
+				</code></pre>
+			</section>
+			<section>
+				<h2>Setter Dependency Injection</h2>
+				<pre><code class="data-trim contenteditable">public class SetterInjection {
+			
+    private Dependency dep;
+    
+    public void setMyDependency(Dependency dep) {
+        this.dep = dep;
+    }
+}
+				</code></pre>
+			</section>
+			<section>
+				<h3>Lab1</h3>
+				<a href="https://docs.google.com/document/d/1i1iw6IknvehAC1NY86RIgwEKKQbesGYjASv8nOr_0cU/edit">https://docs.google.com/document/d/1i1iw6IknvehAC1NY86RIgwEKKQbesGYjASv8nOr_0cU/edit</a>
+			</section>
+                    </section>
+                    <section>
+                        <section>
+                            <h2><font style="font-size: 112px;" color="#3c78d8">DI Support in Spring</font>&nbsp;</h2>
+			    <center>              
+			 	<img style="height:500px;" src="images/DI.jpg"/>
+			    </center>
+                        </section>
+                        <section data-background="images/beans.jpg" >
+                            <h2><font color="white">Sub-topics</font></h2>
+                            
+				<ul>
+				 	<li ><font color="#3c78d8">BeanFactory&nbsp;</font>interface</li>
+					<li ><font color="#3c78d8">XmlBeanFactory&nbsp;</font>implementation</li>
+					<li >Bean configuration file</li>    
+					<ul> 
+						<li >Setter dependency injection</li>
+						<li >Constructor dependency injection</li>
+					</ul>
+					<li>Beans</li>
+					<li>Injection parameters</li>
+                		</ul>
+                        </section>
+                        <section>
+                            <h2>BeanFactory</h2>
+				<ul>
+				 	<li >BeanFactory object is responsible for managing beans and their dependencies</li>
+					<li >Your application interacts with Spring's DI container through BeanFactory interface</li>  
+					<ul> 
+						<li >BeanFactory object has to be created by the application typically in the form of XmlBeanFactory</li>
+						<li >Once created, the application can access the beans via BeanFactory interface</li>
+					</ul>
+                </ul>
+                        </section>
+			<section>
+                            <h2>BeanFactory Implementations</h2>
+				<ul>
+				 	<li >XmlBeanFactory</li>
+					<ul> 
+						<li >Convenience extension of DefaultListableBeanFactory that reads bean definitions from an XML document</li>
+						
+					</ul>
+                		</ul>
+                        </section>
+			<section>
+                            <h2>Reading XML Configuration <br/>File via<br/>
+XmlBeanFactory class</h2>
+			<pre><code class="data-trim contenteditable" style="width:950px">
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+public class XmlConfigWithBeanFactory {
+    public static void main(String[] args) {
+        XmlBeanFactory factory = 
+              new XmlBeanFactory(new FileSystemResource("beans.xml"));
+       SomeBeanInterface b = (SomeBeanInterface) factory.getBean("nameOftheBean");
+    }
+}
+			   </code></pre>
+                        </section>
+			<section>
+				<h2>Bean Configuration File</h2>
+				<ul>
+				 	<li >Each bean is defined using<img style="position: relative; height:55px; left: 0px; top: 35px;" src="images/bean.png"/>tag under the root of the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="position:absolute; height:55px; left: 130px; top: 185px;" src="images/beans.png"/> tag</li>
+					<li >The <b>id</b> attribute is used to give the bean its default name</li>
+					<li >The <b>class</b> attribute specifies the type of the bean<br/> (class of the bean)</li>
+                		</ul>
+			</section>
+			<section>
+				<h2>Spring Bean Definition</h2>
+				<ul>
+				 	<li >Basic Bean Creation</li>
+					<li >Basic Constructor Injection</li>
+					<li >Basic Setter Injection</li>
+					<li >Reference Injection</li>
+                		</ul>
+			</section>
+			<section>
+				<h2 >Basic Bean Creation</h2>
+                <center>
+				<pre class="fragment" style="font-size: 30px;" ><code class="data-trim contenteditable">
+  HelloWorld hello = new mypackage.HelloWorld();
+                </code></pre>
+                              
+			 	   <img class="fragment" style="height:100px;" src="images/arrow2.png"/>
+			    
+                <pre class="fragment" style="font-size: 30px;"><code class="data-trim contenteditable" style="width:950px;">
+ <bean id="hello" 	class="mypackage.HelloWorld" ></bean>
+                </code></pre>
+                </center>
+			</section>
+			<section>
+				<h2>Basic Constructor Injection</h2>
+                <center>
+				<pre class="fragment" style="font-size: 30px;" ><code class="data-trim contenteditable" style="width:1010px;">
+HelloWorld hello = new mypackage.HelloWorld("Hello World");
+                </code></pre>            
+			 	   <img class="fragment" style="height:100px;" src="images/arrow2.png"/>
+                <pre class="fragment" style="font-size: 30px;"><code class="data-trim contenteditable" style="width:950px;">
+ <bean id="hello" 	class="mypackage.HelloWorld" >
+    &lt;constructor-arg value=&quot;Hello World&quot;/&gt;
+ </bean>
+                </code></pre>
+                </center>
+			</section>
+			<section>
+				<h2>Basic Setter Injection</h2>
+                <center>
+				<pre class="fragment" style="font-size: 30px;" ><code class="data-trim contenteditable" style="width:900px;">
+   HelloWorld hello = new mypackage.HelloWorld();
+              hello.setMessage("Hello World");
+                </code></pre>            
+			 	   <img class="fragment" style="height:100px;" src="images/arrow2.png"/>
+                <pre class="fragment" style="font-size: 30px;"><code class="data-trim contenteditable" style="width:900px;">
+ <bean id="hello" 	class="mypackage.HelloWorld" >
+    &lt;property name=&quot;message&quot; value=&quot;Hello World&quot;/&gt;
+ </bean>
+                </code></pre>
+                </center>
+			</section>
+            <section>
+				<h2>Reference Injection</h2>
+                <center>
+				<pre class="fragment" style="font-size: 23px;" ><code class="data-trim contenteditable" style="width:900px;">
+   HelloWorld hello = ...
+   
+   MessageService msgService = new mypackage.MessageService();
+                  msgService.setMessageProvider(hello)
+                </code></pre>            
+			 	   <img class="fragment" style="height:50px;margin-top:0px;margin-bottom:0px;margin-right:0px;
+margin-left:0px;" src="images/arrow2.png"/>
+                <pre class="fragment" style="font-size: 23px;"><code class="data-trim contenteditable" style="width:900px;">
+ <bean id="hello" 	class="mypackage.HelloWorld" >
+    .....
+ </bean>
+ 
+ <bean id="msgService" 	class="mypackage.MessageService" >
+    &lt;property name=&quot;messageProvider&quot; ref=&quot;hello&quot;/&gt;
+ </bean>
+                 </code></pre>
+                </center>
+			</section>
+			<section>
+				<h3>Lab2</h3>
+				<a>https://docs.google.com/document/d/1i1iw6IknvehAC1NY86RIgwEKKQbesGYjASv8nOr_0cU/edit
+
+</a>
+			</section>
+                       
+        </section>
+        <section>
+			<div style="position:relative ; left:0px; top:-350px;">
+				<h2>Spring Injecting Collection</h2>
+			</div>
+                        <section>	
+                            	<h2>&nbsp;</h2>
+				<ul>
+					<li >List</li>
+					<li >Set</li>
+					<li >Map</li>
+					<li >Properties</li>
+				</ul>
+                        </section>
+                        <section>
+                            <h2>&nbsp;</h2>
+                            <ul>
+				<li >List(example)</li>
+   			    </ul>
+				<pre><code class="data-trim contenteditable">
+                         <property name="addressList">
+                            <list>
+                                <value>INDIA</value>
+                                <value>Pakistan</value>
+                                <value>USA</value>
+                                <value>USA</value>
+                                <value>INDIA</value>
+                            </list>
+                         </property>
+				</code></pre>
+			    
+			
+                        </section>
+			<section>
+                            <h2>&nbsp;</h2>
+                            <ul>
+				<li >Set(example)</li>
+   			    </ul>
+				<pre><code class="data-trim contenteditable">
+                     <property name="addressSet">
+                        <set>
+                            <value>INDIA</value>
+                            <value>Pakistan</value>
+                            <value>USA</value>
+                            <value>USA</value>
+                        </set>
+                     </property>
+				</code></pre>
+                        </section>
+			<section>
+                            <h2>&nbsp;</h2>
+                            <ul>
+				<li >Map(example)</li>
+   			    </ul>
+				<pre><code class="data-trim contenteditable">
+                    <property name="addressMap">
+                        <map>
+                            &lt;entry key=&quot;1&quot; value=&quot;INDIA&quot;/&gt;
+                            &lt;entry key=&quot;2&quot; value=&quot;Pakistan&quot;/&gt;
+                            &lt;entry key=&quot;4&quot; value=&quot;USA&quot;/&gt;
+                        </map>
+                    </property>
+				</code></pre>
+                        </section>
+			<section>
+                            <h2>&nbsp;</h2>
+                            <ul>
+				<li >Properties(example)</li>
+   			    </ul>
+				<pre><code class="data-trim contenteditable">
+                    <property name="addressProp">
+                        <props>
+                            <prop key="one">INDIA</prop>
+                            <prop key="two">Pakistan</prop>
+                            <prop key="three">USA</prop>
+                            <prop key="four">USA</prop>
+                        </props>
+                    </property>
+				</code></pre>
+                        </section>
+			<section>
+                            <h2>&nbsp;</h2>
+ 			    <h3>Lab3</h3>	
+                            <ul>
+				<li ><a>https://docs.google.com/document/d/1i1iw6IknvehAC1NY86RIgwEKKQbesGYjASv8nOr_0cU/edit</a></li>
+   			    </ul>
+                        </section>
+                    </section>
+<!----------------------->
+                    <section>
+                        <h2>Spring Bean Definition</h2>
+                        <ul>
+				<li >Configuration metadata</li>
+				<ul>
+					<li >Set</li>
+					<li >class</li> 
+					<li >id/name</li> 
+					<li >scope [Bean Scope]</li>
+					<li >constructor-arg [DI]</li>
+					<li >properties [DI]</li>
+					<li >autowiring mode [Auto wire]</li>
+					<li >lazy-initialization mode [init when fisrt request]</li>
+					<li >initialization method [Life Cycle]</li>
+					<li >destruction method [Life Cycle]</li>
+				</ul>
+			</ul>
+                    </section>
+                    <section>
+                        <h2>Spring Bean Definition Inheritance</h2>
+                        <ul>
+				<li >A child bean definition inherits configuration data from a parent definition.</li>
+				<li >The child definition can override values.</li>
+				<li >Spring Bean definition inheritance has nothing to do with Java class inheritance but inheritance concept is same.</li>
+				<li >attribute [parent]</li>
+			</ul>
+			<font>Ex.Spring Framework 3.1[page 39]</font>
+		
+			</ul>
+                    </section>
+				    <section>
+                        <section data-background="images/beans.jpg" data-background-size="100%" data-background-repeat="repeat">
+                            <br/>
+                           <h1><font color="white">Bean Scopes</font></h1>
+                        </section>
+                        <section>
+                            <h3>singleton [default]</h3>
+                            <img class="fragment" style="height:500px;" src="images/singletonScope.png"/>
+                        </section>
+                        <section>
+                            <h3>prototype</h3>
+                            <img class="fragment" style="height:500px;" src="images/prototypeScope.png"/>     
+                        </section>
+                        <section>
+                                <h3>Other Scopes</h3>
+                                <ul>
+                                    <li>request [HTTP request]</li>
+                                    <li>session [HTTP session]</li>
+                                    <li>global-session [gobal HTTP session]<br/></li>
+                                    <li><font color="orange">custom scopes</font></li>
+                                </ul>     
+                        </section>
+                    </section>
+          <section>
+			<section>
+                <h2>Spring Bean Life Cycle</h2>
+                <img style="height:500px;" src="images/spring-bean-lifecycle_thumb.png"/> 
+			</section>
+			<section>
+		                <h2>Initialization callbacks</h2>
+				<pre><code class="data-trim contenteditable">
+    public class ExampleBean {
+        public void init() {
+            // do some initialization work
+        }
+    }
+                </code></pre>
+                <pre><code class="data-trim contenteditable">
+ &lt;bean id=&quot;exampleBean&quot; class=&quot;examples.ExampleBean&quot; init-method=&quot;init&quot;/&gt;
+                </code></pre>
+			</section>
+			<section>
+		                <h2>Destruction callbacks</h2>
+				<pre><code class="data-trim contenteditable">
+    public class ExampleBean {
+        public void destroy() {
+            // do some destruction work
+        }
+    }
+			    </code></pre>
+                <pre><code class="data-trim contenteditable" style="width:900px;">
+ &lt;bean id=&quot;exampleBean&quot; class=&quot;examples.ExampleBean&quot; destroy-method=&quot;destroy&quot;/&gt;
+				</code></pre>
+			</section>
+         </section>
+         <section>
+			<section>
+		                <h2>Spring Beans Auto-Wiring</h2>
+		                <ul>
+			            <li> <span>Spring can autowire dependencies through introspection of the bean classes so that you do not have to explicitly specify the bean properties or constructor arguments.
+				</span> </li>
+			        
+			        </ul>
+			</section>
+			<section>
+				<h2>Autowiring Properties</h2>
+		                <ul>
+			            <li>autowire="name"</li>
+			            <ul>
+			            	<li>The property names of target bean (actually set<pre><code><Property-name>()</code></pre> methods of the target bean) are used to search beans </li>
+			            </ul>
+				    <li>autowire="type"</li>
+			            <ul>
+			            	<li>The property types of target bean - actually argument types of set<pre><code><Property-name>(ArgumentType arg)</code></pre> - are used to match a bean instance in the container </li>
+			            </ul>
+			        </ul>	
+			</section>
+			<section>
+				<h2>Autowiring Properties</h2>
+		                <ul>
+			            <li>autowire="constructor"</li>
+			            <ul>
+			            	<li>Match constructor argument types</li>
+					<li>The argument types of Constructor(<font color="#0000FF">ArgumentType</font> arg) - are used to match a bean instance in the container </li>
+			            </ul>
+				    <li>autowire="autodetect"</li>
+			            <ul>
+			            	<li>Spring will attempt to autowire by constructor first,If a suitable constructor-to-bean match cant't be found,then Spring will attempt to autowiring using "type"</li>
+			            </ul>
+			        </ul>	
+			</section>
+         </section>
+		 <section>
+			<div style="position:relative ; left:0px; top:-350px;">
+				<h2>Spring Annotation Based Configuration</h2>
+			</div>
+                        <section>	
+                            	<h2>&nbsp;</h2>	
+				<h2>&nbsp;</h2>
+		                <pre><code class="data-trim contenteditable" style="width:900px;">
+ &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+ &lt;beans  xmlns="http://www.springframework.org/schema/beans" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:context="http://www.springframework.org/schema/context"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-3.0.xsd"&gt;
+
+         &lt;context:annotation-config/&gt;
+
+         &lt;!-- bean definitions go here --&gt;
+ &lt;/beans&gt;		
+				</code></pre>
+                    </section>
+                    <section>
+                        <h2>&nbsp;</h2>
+			<h2>&nbsp;</h2>
+                         <ul>
+			        <li>@Required(require property)</li>
+				<li>@Autowired(Injection by Type)</li>
+				<li>@Qualifier(specify by name)</li>
+				<li>@PostConstruct(initialization callback in life cycle)</li>
+				<li>@PreDestroy(destruction callback destruction callback)</li>
+				<li>@Resource(@Autowired+@Qualifier)</li>
+			 </ul>
+                    </section>
+ 		</section>
+                <section>
+                    <h2>any <font color="#3c78d8">question</font>?</h2>
+                </section>
+                </div>
+
+
+            </div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="lib/js/jquery-2.0.3.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+                    $('.reveal .slides section:gt(0)').append($('#foot-tmpl').html());
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				slideNumber: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				],
+				    // The "normal" size of the presentation, aspect ratio will be preserved
+				    // when the presentation is scaled to fit different resolutions. Can be
+				    // specified using percentage units.
+				    //width: 800,
+				    //height: 700,
+
+				    // Factor of the display size that should remain empty around the content
+				    //margin: 0.1,
+
+				    // Bounds for smallest/largest possible scale to apply to content
+				    //minScale: 0.2,
+				    //maxScale: 1.0
+			});
+
+		</script>
+
+	</body>
+</html>
