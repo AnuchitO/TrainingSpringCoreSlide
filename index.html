@@ -231,6 +231,73 @@
 			    </center>
                         </section>
                         <section>
+                          <h2>
+                        	Dependency Inversion Principle (DIP)
+                          </h2>
+
+                        	<span>"High level modules should not depend upon low level modules. Both should depend upon abstractions.
+Abstractions should not depend upon details. Details should depend upon abstractions."</span>
+<br/><br/><br/>
+							<h2>"Abstraction"</h2>
+                        </section>
+                        <section>
+                        	<center>              
+							 	<img src="images/NotificationEmailUML.png"/>
+							</center>
+							<a rel="stylesheet" type="text/css" href="http://www.somkiat.cc/dependency-injection-vs-dependency-inversion/">Cr.www.somkiat.cc</a>
+                        </section>
+                        <section>
+                        <pre ><code class="data-trim contenteditable" style="width:auto;">
+public class Email { 
+	public void send() {	
+	}
+}
+                </code></pre>  
+                        <pre ><code class="data-trim contenteditable" style="width:auto;">
+public class Notification {
+	Email email;
+	public Notification() {
+		&nbsp;&nbsp;&nbsp;&nbsp;email = new Email();
+	}
+	public void notifyPromotion() {
+		&nbsp;&nbsp;&nbsp;&nbsp;email.send();
+	}
+ 
+}                </code></pre> 
+<h3 style="color:red">Violation DIP</h3>
+                        </section>
+                        <section>
+                        	<center>              
+							 	<img src="images/NotificationEmailUMLAbstaction.png"/>
+							</center>
+						</section>
+						<section>
+                        <pre ><code class="data-trim contenteditable" style="width:auto;">
+public interface MessageService {
+	public void send();
+ 
+}
+                </code></pre>  
+                				<pre ><code class="data-trim contenteditable" style="width:auto;">
+public class Email implements MessageService { 
+	public void send() {	
+	}
+}
+                </code></pre>  
+                        <pre ><code class="data-trim contenteditable" style="width:auto;">
+public class Notification {
+	MessageService messageService;
+	public Notification() {
+		&nbsp;&nbsp;&nbsp;&nbsp;messageService = new Email();
+	}
+	public void notifyPromotion() {
+		&nbsp;&nbsp;&nbsp;&nbsp;messageService.send();
+	}
+ 
+}            </code></pre> 
+                        </section>
+
+                        <section>
                             <h2>
                                 Dependency Injection (DI)
                             </h2>
@@ -245,6 +312,12 @@
 					
                 		</ul>
                         </section>
+                         <section>
+                        	<center>              
+							 	<img src="images/NotificationEmailUML_IOC.png"/>
+							</center>
+						</section>
+                            
 			<section>
 				<h2>Two Dependency Injection Variants</h2>
 				<ul>
